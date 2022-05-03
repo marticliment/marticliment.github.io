@@ -1,0 +1,19 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Chord Transposer",
+  "short_name": "Transposer",
+  "icons": [{
+    "src": "icon.png",
+    "sizes": "688x688",
+    "type": "image/png"
+  }, {
+    "src": "icon-min.png",
+    "sizes": "344x344"
+  }],
+  "scope": "/",
+  "id": "ChordTranspose",
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#df8429"
+}
