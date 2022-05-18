@@ -2,22 +2,23 @@
 <html>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.10.5/brython.min.js">
-</script>
+</script><!--script type="text/javascript" src="brython_stdlib.js"></script-->
+
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Chord Transposer - Transpose your guitar songs for free, forever</title>
+    <title>Guitar Chord Transposer</title>
     <link rel="icon" href="icon.png">
     <link rel="manifest" href="manifest.webmanifest">
     <meta charset="utf-8">
     <meta name="Description" CONTENT="Transpose your guitar songs to match your voice pitch. Transpose selectinng initial and final note or transpose by semitones. This website is 100% free, no paid extra features or anythong similar. Enjoy :)">
-    <meta name="robots" content="noindex,nofollow">
 </head>
 
 <body onload="brython();document.getElementById('input').focus()">
     <script src="script.js"></script>
     <script type="text/python">
           from browser import document, alert, window
+          #import re
   
           def echo(text):
               alert(text)
@@ -96,11 +97,11 @@
   
           document["calculate"].bind("click", run)
         </script>
-    <p id="title">Chord Transposer</p>
+    <p id="title">Guitar Chord Transposer</p>
     <p id="subtitle">Easily transpose the chords on your guitar songs!</p>
 
     <img src="./icon.png" id="logo">
-    <textarea id="input" onclick="showInput()" placeholder="Write or paste the chords here" onkeyup="document.getElementById('calculate').disabled = document.getElementById('input').value == '';"></textarea><textarea id="output" onclick="if(document.getelementById('output').value != ''){showOutput();}" placeholder="The transposed chords will appear here upon transposed" disabled></textarea>
+    <textarea id="input" onclick="showInput()" placeholder="Write or paste the chords here" onkeyup="document.getElementById('calculate').disabled = document.getElementById('input').value == '';" spellcheck="false"></textarea><textarea id="output" onclick="if(document.getelementById('output').value != ''){showOutput();}" placeholder="The transposed chords will appear here upon transposed" disabled></textarea>
     <span id=sNotesRadio><input type="radio" id="notesRadio" name="input_mode" value="notes" onclick="showNotes()" checked><label for="notesRadio"> Transpose using notes</label></span>
     <span id=sTonesRadio><input type="radio" id="tonesRadio" name="input_mode" value="tones" onclick="showTones()"><label for="tonesRadio"> Transpose using tones</label></span>
 
@@ -140,7 +141,7 @@
 
     <div id="bottom">
         <p style="background-color: transparent;text-align: left; position: absolute; left: 20px;">Made by <a href="https://github.com/martinet101/" target="_blank">Martí Climent</a></p>
-        <p style="background-color: transparent;text-align: right;position: absolute; right: 20px;">Version 1.0-beta - Under the MIT license</p>
+        <p style="background-color: transparent;text-align: right;position: absolute; right: 20px;">Version 1.1 - Under the <a href="https://github.com/martinet101/martinet101.github.io/blob/main/LICENSE" target="_blank">MIT License</a></p>
     </div>
 </body>
 

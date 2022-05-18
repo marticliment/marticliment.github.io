@@ -38,7 +38,7 @@ body {
 }
 
 #title {
-    font-size: max(40px, min(8vw, 60px));
+    font-size: max(20px, min(6.0vw, 60px));
     position: absolute;
     margin: 0px;
     padding: 0px;

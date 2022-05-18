@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "dir": "ltr",
-  "name": "Chord Transposer",
-  "short_name": "Transposer",
+  "name": "Guitar Chord Transposer",
+  "short_name": "Guitar Chord Transposer",
   "icons": [{
     "src": "icon.png",
     "sizes": "688x688",
@@ -12,7 +12,7 @@
     "sizes": "344x344"
   }],
   "scope": "/",
-  "id": "ChordTranspose",
+  "id": "GuitarChordTransposer",
   "start_url": "index.html",
   "display": "standalone",
   "theme_color": "#df8429"
