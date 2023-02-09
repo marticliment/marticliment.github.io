@@ -53,13 +53,9 @@ setLayout();
 function showInput() {
     document.getElementById("input").style.visibility = "initial";
     document.getElementById("output").style.visibility = "hidden";
-    if (window.innerHeight > window.innerWidth) { // mobile
-        document.getElementById("edittext").style.visibility = "hidden";
-        document.getElementById("input").focus();
-    } else { // desktop   
-        document.getElementById("edittext").style.visibility = "hidden";
-        document.getElementById("input").focus();
-    }
+    document.getElementById("edittext").style.visibility = "hidden";
+    document.getElementById("calculate").innerText = "Transpose";
+    document.getElementById("input").focus();
     document.getElementById("input").style.color = fontcolor;
     document.getElementById("output").style.color = "grey";
     bigTextarea = 0;
@@ -68,11 +64,9 @@ function showInput() {
 function showOutput() {
     document.getElementById("input").style.visibility = "hidden";
     document.getElementById("output").style.visibility = "initial";
-    if (window.innerHeight > window.innerWidth) { // mobile
-        document.getElementById("edittext").style.visibility = "initial";
-    } else { // desktop
-        document.getElementById("edittext").style.visibility = "initial";
-    }
+    document.getElementById("calculate").innerText = "🠄 Back to edit";
+    document.getElementById("edittext").style.visibility = "initial";
+    document.getElementById("edittext").style.visibility = "initial";
     document.getElementById("output").style.color = fontcolor;
     document.getElementById("input").style.color = "grey";
     bigTextarea = 1;
