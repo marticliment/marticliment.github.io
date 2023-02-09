@@ -177,3 +177,16 @@ a {
     background-color: transparent;
     color: #df8429;
 }
+
+#edittext {
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#edittext:hover {
+    border: 0px;
+    background-color: #df8429;
+    border: 1px solid #92561a;
+}

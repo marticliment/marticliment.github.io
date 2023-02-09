@@ -108,7 +108,7 @@
     left: 0px;
     box-sizing: border-box;
     margin: 10px;
-    width: calc(70% - 15px);
+    width: calc(100% - 20px);
     height: calc(100% - 265px);
 }
 
@@ -119,7 +119,8 @@
     box-sizing: border-box;
     margin: 10px;
     right: 0px;
-    width: calc(30% - 15px);
+    visibility: hidden;
+    width: calc(100% - 20px);
     height: calc(100% - 265px);
 }
 
@@ -132,4 +133,16 @@
     height: 60px;
     text-align: center;
     vertical-align: middle;
+}
+
+#edittext {
+    position: absolute;
+    top: 185px;
+    right: 5px;
+    height: 48px;
+    width: 48px;
+    font-size: 20pt;
+    margin: 10px;
+    visibility: hidden;
+    border: 0px solid black;
 }

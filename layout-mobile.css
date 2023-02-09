@@ -117,18 +117,19 @@ body {
     box-sizing: border-box;
     margin: 10px;
     width: calc(100% - 20px);
-    height: calc(70% - 160px);
+    height: calc(100% - 315px);
 }
 
 #output {
     resize: none;
     position: absolute;
-    bottom: 65px;
+    top: 230px;
     box-sizing: border-box;
     margin: 10px;
     left: 0px;
     width: calc(100% - 20px);
-    height: calc(30% - 165px);
+    visibility: hidden;
+    height: calc(100% - 315px);
 }
 
 #bottom {
@@ -140,4 +141,16 @@ body {
     height: 60px;
     text-align: center;
     vertical-align: middle;
+}
+
+#edittext {
+    position: absolute;
+    top: 235px;
+    right: 5px;
+    height: 48px;
+    width: 48px;
+    font-size: 20pt;
+    margin: 10px;
+    visibility: hidden;
+    border: 0px solid black;
 }

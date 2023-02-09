@@ -7,11 +7,11 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Guitar Chord Transposer</title>
+    <title>Chord Transposer</title>
     <link rel="icon" href="icon.png">
     <link rel="manifest" href="manifest.webmanifest">
     <meta charset="utf-8">
-    <meta name="Description" CONTENT="Transpose your guitar songs to match your voice pitch. Transpose selectinng initial and final note or transpose by semitones. This website is 100% free, no paid extra features or anythong similar. Enjoy :)">
+    <meta name="Description" CONTENT="Transpose your songs to match your voice pitch. Transpose selectinng initial and final note or transpose by semitones. This website is 100% free, no paid extra features or anythong similar. Enjoy :)">
 </head>
 
 <body onload="brython();document.getElementById('input').focus()">
@@ -97,8 +97,8 @@
   
           document["calculate"].bind("click", run)
         </script>
-    <p id="title">Guitar Chord Transposer</p>
-    <p id="subtitle">Easily transpose the chords on your guitar songs!</p>
+    <p id="title">Chord Transposer</p>
+    <p id="subtitle">Easily transpose the chords on your songs!</p>
 
     <img src="./icon.png" id="logo">
     <textarea id="input" onclick="showInput()" placeholder="Write or paste the chords here" onkeyup="document.getElementById('calculate').disabled = document.getElementById('input').value == '';" spellcheck="false"></textarea><textarea id="output" onclick="if(document.getelementById('output').value != ''){showOutput();}" placeholder="The transposed chords will appear here upon transposed" disabled></textarea>
@@ -143,6 +143,8 @@
         <p style="background-color: transparent;text-align: left; position: absolute; left: 20px;">Made by <a href="https://www.marticliment.com/" target="_blank">Martí Climent</a></p>
         <p style="background-color: transparent;text-align: right;position: absolute; right: 20px;">Version 1.2-beta - Under the <a href="https://github.com/marticliment/marticliment.github.io/blob/main/LICENSE" target="_blank">MIT License</a></p>
     </div>
+
+    <button id="edittext" onclick="showInput()">✎</button>
 </body>
 
 </html>
